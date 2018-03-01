@@ -137,8 +137,7 @@
 }
 
 .task_user_icon {
-    stroke: #000000;
-    fill: #000000;
+    fill: #393f44;
 }
 
 .task_group_script {
@@ -146,8 +145,7 @@
 }
 
 .task_script_icon {
-    stroke: #000000;
-    fill: #000000;
+    fill: #393f44;
 }
 
 .task_group_business_rule {
@@ -155,8 +153,7 @@
 }
 
 .task_business_rule_icon {
-    stroke: #000000;
-    fill: #000000;
+    fill: #393f44;
 }
 
 #userTask .task_group_user {
@@ -351,7 +348,7 @@
 
 
 #endNoneEvent #background {
-    opacity: 0.5;
+    opacity: 1;
     fill: #fce7e7;
 }
 #endNoneEvent #end {
@@ -361,7 +358,7 @@
 
 
 #endSignalEvent #background {
-    opacity: 0.5;
+    opacity: 1;
     fill: #fce7e7;
 }
 #endSignalEvent #end {
@@ -375,7 +372,7 @@
 
 
 #endMessageEvent #background {
-    opacity: 0.5;
+    opacity: 1;
     fill: #fce7e7;
 }
 #endMessageEvent #end {
@@ -389,7 +386,7 @@
 
 
 #endTerminateEvent #background {
-    opacity: 0.5;
+    opacity: 1;
     fill: #fce7e7;
 }
 #endTerminateEvent #end {
@@ -402,7 +399,7 @@
 }
 
 #endErrorEvent #background {
-    opacity: 0.5;
+    opacity: 1;
     fill: #fce7e7;
 }
 #endErrorEvent #end {
@@ -766,9 +763,9 @@
 
 
 .subProcess {
-    fill: #FFFFFF;
-    stroke: #000000;
-    stroke-width: 1.5px;
+    fill: #FFFFFF; /*this affects only the reusable subprocess*/
+    stroke: #393f44; /*this affects the reusable, ad hoc, and embedded subprocesses*/
+    stroke-width: 1.5px; /*this affects the adhoc and embedded subprocesses but not the collapsed one*/
 }
 
 .subProcess_group_reusable {
@@ -780,21 +777,21 @@
 }
 
 .subProcess_reusable_icon {
-    stroke: #000000;
-    fill: #000000;
+    fill: #393f44;
 }
 
 .subProcess_reusable_boundingbox {
     fill:none;
-    stroke: black;
-    stroke-width: 10px;
+    stroke: #393f44;     /* this is the little box around the icon. */
+    stroke-width: 1.5px;
 }
 
 .subProcess_event {
-    stroke-dasharray: 5, 5;
+    stroke-dasharray: 2,2;
+    stroke-width: 2px;
     opacity: 1;
-    fill: #f2f2f2;
-    stroke: #000000;
+    fill: #fafafa;
+    stroke: #393f44;
 }
 
 .subProcess_event_icon {
@@ -816,7 +813,8 @@
 }
 
 #reusableSubProcess .subProcess {
-    stroke-width: 3px;
+    stroke-width: 1.5px; /* this is the whole outline */
+    stroke: #393f44;
 }
 
 #reusableSubProcess .subProcess_group_reusable {
@@ -824,7 +822,7 @@
 }
 
 #adHocSubProcess .subProcess {
-    fill: #f2f2f2;
+    fill: #fafafa;
 }
 
 #adHocSubProcess .subProcess_group_adHoc {
@@ -836,11 +834,11 @@
 }
 
 #eventSubProcess .subProcess {
-    fill: #f2f2f2;
+    fill: #fafafa;
 }
 
 #embeddedSubProcess .subProcess {
-    fill: #f2f2f2;
+    fill: #fafafa;
 }
 
 
